@@ -10,7 +10,7 @@ It highlights my **projects, professional experience, technical skills, and cont
 
 👋 About Me
 
-I am a **Data Scientist & Automation Engineer** with hands-on experience in building data-driven solutions, automating workflows, and solving real-world business problems.
+I am a **Data Science Enthusiast & Automation Engineer** with hands-on experience in building data-driven solutions, automating workflows, and solving real-world business problems.
 
 I focus on:
 - Turning data into actionable insights
