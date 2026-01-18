@@ -1,0 +1,365 @@
+/* About Page Styles */
+
+.about-hero {
+    padding: 150px 20px 80px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    text-align: center;
+    color: white;
+}
+
+.page-title {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    animation: fadeInUp 0.8s ease;
+}
+
+.page-subtitle {
+    font-size: 1.3rem;
+    opacity: 0.9;
+    animation: fadeInUp 1s ease;
+}
+
+/* Summary Section */
+.summary-section {
+    padding: 5rem 20px;
+    background: white;
+}
+
+.summary-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.summary-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--dark);
+}
+
+.summary-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--gray);
+    margin-bottom: 1.5rem;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.info-item strong {
+    color: var(--primary);
+    font-size: 0.9rem;
+}
+
+.info-item span {
+    color: var(--dark);
+    font-size: 1rem;
+}
+
+.summary-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.stat-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.stat-box:hover {
+    transform: translateY(-10px);
+}
+
+.stat-box h3 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.stat-box p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* Skills Section */
+.skills-section {
+    padding: 5rem 20px;
+    background: var(--light);
+}
+
+.skills-category {
+    margin-bottom: 3rem;
+}
+
+.category-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--dark);
+}
+
+.skill-bars {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.skill-bar {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+    color: var(--dark);
+}
+
+.progress {
+    height: 10px;
+    background: #e2e8f0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    border-radius: 10px;
+    transition: width 1.5s ease;
+    animation: fillBar 1.5s ease;
+}
+
+@keyframes fillBar {
+    from {
+        width: 0;
+    }
+}
+
+.tools-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.tool-badge {
+    padding: 0.8rem 1.5rem;
+    background: white;
+    border-radius: 50px;
+    color: var(--primary);
+    font-weight: 600;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.tool-badge:hover {
+    transform: translateY(-5px);
+    background: var(--gradient);
+    color: white;
+    box-shadow: 0 10px 25px rgba(102, 102, 241, 0.3);
+}
+
+/* Education Section */
+.education-section {
+    padding: 5rem 20px;
+    background: white;
+}
+
+.education-timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.education-timeline::before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 80px;
+    margin-bottom: 3rem;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: 20px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border: 4px solid #667eea;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-content {
+    background: var(--light);
+    padding: 2rem;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+    transform: translateX(10px);
+    box-shadow: var(--shadow);
+}
+
+.timeline-date {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: var(--gradient);
+    color: white;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.timeline-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--dark);
+}
+
+.institution {
+    color: var(--gray);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.gpa {
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* Certifications Section */
+.certifications-section {
+    padding: 5rem 20px;
+    background: var(--light);
+}
+
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.cert-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+.cert-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--gradient);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.cert-card:hover::before {
+    transform: scaleX(1);
+}
+
+.cert-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
+}
+
+.cert-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.cert-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: var(--dark);
+}
+
+.cert-card p {
+    color: var(--gray);
+    font-weight: 600;
+}
+
+.cert-detail {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--primary);
+    font-style: italic;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+    .page-title {
+        font-size: 2.5rem;
+    }
+    
+    .summary-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .summary-stats {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .timeline-item {
+        padding-left: 60px;
+    }
+    
+    .education-timeline::before {
+        left: 20px;
+    }
+    
+    .timeline-dot {
+        left: 10px;
+    }
+}
+
+@media (max-width: 568px) {
+    .summary-stats {
+        grid-template-columns: 1fr;
+    }
+}
