@@ -14,15 +14,14 @@
 }
 
 .experience-timeline {
-    max-width: 900px;
+    max-width: 1100px;
     margin: 0 auto;
     position: relative;
 }
 
 .timeline-line {
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    right: 80px;
     top: 0;
     bottom: 0;
     width: 3px;
@@ -36,8 +35,7 @@
 
 .timeline-marker {
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    right: 45px;
     top: 30px;
     z-index: 2;
 }
@@ -58,27 +56,27 @@
 .timeline-card {
     background: white;
     border-radius: 20px;
-    padding: 2.5rem;
+    padding: 3rem;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-    margin-left: calc(50% + 60px);
+    margin-right: 150px;
     position: relative;
-    animation: slideInRight 0.6s ease;
+    animation: slideInLeft 0.6s ease;
 }
 
 .timeline-card::before {
     content: '';
     position: absolute;
-    left: -30px;
+    right: -30px;
     top: 40px;
     width: 30px;
     height: 3px;
-    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(90deg, #764ba2 0%, #667eea 100%);
 }
 
-@keyframes slideInRight {
+@keyframes slideInLeft {
     from {
         opacity: 0;
-        transform: translateX(50px);
+        transform: translateX(-50px);
     }
     to {
         opacity: 1;
@@ -174,6 +172,8 @@
     background: var(--light);
     border-radius: 15px;
     transition: all 0.3s ease;
+    min-height: 140px;
+    align-items: flex-start;
 }
 
 .achievement-item:hover {
@@ -184,18 +184,28 @@
 .achievement-icon {
     font-size: 2.5rem;
     flex-shrink: 0;
+    width: 50px;
+    text-align: center;
+}
+
+.achievement-content {
+    flex: 1;
+    min-width: 0;
 }
 
 .achievement-content h4 {
     font-size: 1.1rem;
     color: var(--dark);
     margin-bottom: 0.5rem;
+    word-wrap: break-word;
 }
 
 .achievement-content p {
     font-size: 0.95rem;
     color: var(--gray);
     line-height: 1.6;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .responsibilities {
@@ -393,12 +403,11 @@
 /* Responsive */
 @media (max-width: 968px) {
     .timeline-line {
-        left: 35px;
+        right: 35px;
     }
     
     .timeline-marker {
-        left: 0;
-        transform: none;
+        right: 0;
     }
     
     .marker-icon {
@@ -408,11 +417,12 @@
     }
     
     .timeline-card {
-        margin-left: 100px;
+        margin-right: 100px;
+        padding: 2rem;
     }
     
     .timeline-card::before {
-        left: -40px;
+        right: -40px;
     }
     
     .card-header {
@@ -438,6 +448,11 @@
 }
 
 @media (max-width: 568px) {
+    .timeline-card {
+        margin-right: 80px;
+        padding: 1.5rem;
+    }
+    
     .metrics-grid {
         grid-template-columns: 1fr;
     }
